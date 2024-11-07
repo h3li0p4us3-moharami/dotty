@@ -77,6 +77,8 @@ settings:
   skip_existing: false
 ```
 
+For a more detailed example configuration, checkout our [dotty.yaml](example/dotty.yaml) file.
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
