@@ -39,15 +39,6 @@ impl AURHelper {
             AURHelper::None => "None",
         }
     }
-
-    /// Returns the installation command for this AUR helper
-    pub fn install_command(&self) -> Option<&str> {
-        match self {
-            AURHelper::Paru => Some("git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si"),
-            AURHelper::Yay => Some("git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si"),
-            AURHelper::None => None,
-        }
-    }
 }
 
 /// Prompts user to choose an AUR helper to install
